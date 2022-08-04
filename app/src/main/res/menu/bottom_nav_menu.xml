@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:background="@color/theme_green"
+        android:icon="@drawable/home_button"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_rewards"
+        android:background="@color/theme_green"
+        android:icon="@drawable/rewards_button"
+        android:title="Rewards" />
+
+    <item
+        android:id="@+id/navigation_money"
+        android:background="@color/theme_green"
+        android:icon="@drawable/money_button"
+        android:title="Money" />
+
+</menu>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".ui.home.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="@color/theme_green"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/rubik_bold"
+                android:text="Total Waste"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_style"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:text="12 kg"
+                    android:textColor="#444"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/round_style"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:text="120 gm"
+                    android:textColor="#444"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="@color/theme_green_light"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_bold"
+                    android:text="Last Week Total:"
+                    android:textColor="#333"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/round_style"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_bold"
+                        android:text="120kg"
+                        android:textColor="#333"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/round_style"
+                        android:backgroundTint="#C0E9C1"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="Daily"
+                        android:textColor="#333" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_style"
+                        android:backgroundTint="#6BCB6E"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="Weekly"
+                        android:textColor="#333" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_style"
+                        android:backgroundTint="#C0E9C1"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="Monthly"
+                        android:textColor="#333" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_style"
+                        android:backgroundTint="#C0E9C1"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="Yearly"
+                        android:textColor="#333" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/graph_home" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="#DCEC82"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/rubik_bold"
+                android:text="Pick-Up timings for this week."
+                android:textColor="#333"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/timetable_home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="#EAF8EA"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/round_style"
+                    android:backgroundTint="#C0E9C1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/red_dustbin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/round_style"
+                    android:backgroundTint="#C0E9C1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/blue_dustbin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/round_style"
+                    android:backgroundTint="#C0E9C1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/green_dustbin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/round_style"
+                    android:backgroundTint="#C0E9C1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/yellow_dustbin" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+               >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/round_style"
+                    android:backgroundTint="#96DA98"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:text="06kg"
+                    android:textColor="#333"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/round_style"
+                    android:backgroundTint="#96DA98"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:text="21kg"
+                    android:textColor="#333"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/round_style"
+                    android:backgroundTint="#96DA98"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:text="21kg"
+                    android:textColor="#333"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/round_style"
+                    android:backgroundTint="#96DA98"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:text="15kg"
+                    android:textColor="#333"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

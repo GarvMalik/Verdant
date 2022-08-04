@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Back"
+            android:textColor="#333"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/workerImageCreatePage"
+        android:layout_width="301dp"
+        android:layout_height="238dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/enter_otp" />
+
+    <TextView
+        android:id="@+id/textMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text='Enter OTP '
+        android:textColor="#333"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/rubik_regular"
+        android:text="@string/an_4_digit_code_has_been_sent_to_91_8295035125"
+        android:textColor="#777"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/OTPInput"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/round_style"
+        android:backgroundTint="@color/theme_green_background"
+        android:fontFamily="@font/rubik_regular"
+        android:hint="1234"
+        android:letterSpacing="1"
+
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+
+
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/resend_otp"
+            android:textColor="#666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="56dp"
+            android:text=""
+            android:textColor="#FF0511"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/letsStart"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/theme_green"
+        android:fontFamily="@font/rubik_medium"
+        android:letterSpacing="-0.001"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:background="@drawable/round_corner_border" />
+
+
+</LinearLayout>

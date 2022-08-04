@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#396035">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="105dp"
+        android:src="@drawable/create_account_illustration" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/company_logo"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="78dp"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:fontFamily="@font/rubik_medium"-->
+<!--        android:text="Join our community"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="30dp" />-->
+
+    <LinearLayout
+        android:id="@+id/createPageBox"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/round_corner_box"
+        android:backgroundTint="#EAF8EA"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="@string/create_account"
+            android:textColor="#333"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/nameText"
+                android:layout_width="295dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/rubik_regular"
+                android:hint="@string/name"
+                android:paddingStart="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck"
+                android:inputType="text"
+                android:autofillHints="name"/>
+
+            <ImageView
+                android:id="@+id/nameIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/checkmark"
+                app:icon="@drawable/checkmark_green"
+                tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal"
+           >
+
+            <EditText
+                android:id="@+id/phoneText"
+                android:layout_width="295dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/rubik_regular"
+                android:hint="Mobile Number"
+                android:paddingStart="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck,TextContrastCheck"
+                android:inputType="phone"
+                android:autofillHints="phone"/>
+
+            <ImageView
+                android:id="@+id/phoneIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/phone"
+                android:backgroundTint="#888"
+                android:contentDescription="@string/app_name"
+                app:icon="@drawable/phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal"
+           >
+
+            <EditText
+                android:id="@+id/emailText"
+                android:layout_width="295dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/rubik_regular"
+                android:hint="Email"
+                android:paddingStart="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck,TextContrastCheck"
+                android:inputType="textEmailAddress"
+                android:autofillHints="emailAddress"/>
+
+            <ImageButton
+                android:id="@+id/emailIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mail"
+                android:backgroundTint="#888"
+                android:contentDescription="@string/app_name"
+                app:icon="@drawable/mail" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_style"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_width="295dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/rubik_regular"
+                android:hint="@string/password"
+                android:paddingStart="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck,TextContrastCheck"
+                android:inputType="textPassword"
+                android:autofillHints="password"/>
+
+            <ImageView
+                android:id="@+id/passwordIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/eye_outline_1"
+                android:backgroundTint="#777"
+                android:contentDescription="@string/app_name"
+                app:icon="@drawable/checkmark_green" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/rubik_bold"
+            android:background="@drawable/round_style"
+            app:backgroundTint="#2CB530"
+            android:gravity="center"
+            android:text="Continue"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="30sp" >
+        </Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Don't have an account?"
+                android:textColor="#333"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Sign Up"
+                android:textColor="@color/theme_green"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
